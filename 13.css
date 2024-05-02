@@ -1,0 +1,64 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#calc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+#calc input {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: right;
+}
+#calc button, input{
+    padding: .5rem;
+}
+#plus, #minus, #umnoz, #delenie, #kvadrat, #ravno, #stepen, #koren, #delete {
+    grid-column-start: 4;
+}
+#delete{
+    grid-row-start: 2;
+}
+#plus{
+    grid-row-start: 3;
+}
+#minus{
+    grid-row-start: 4;
+}
+#umnoz{
+    grid-row-start: 5;
+}
+#delenie{
+    grid-row-start: 6;
+    grid-column-start: 1;
+}
+#kvadrat{
+    grid-row-start: 6;
+    grid-column-start: 2;
+}
+#ravno{
+    grid-row-start: 5;
+    grid-column-start: 3;
+}
+#stepen{
+    grid-row-start: 6;
+    grid-column-start: 3;
+}
+#koren{
+    grid-row-start: 6;
+    grid-column-start: 4;
+}
+#pusto {
+    grid-row-start: 5;
+    grid-column-start: 1;
+}
